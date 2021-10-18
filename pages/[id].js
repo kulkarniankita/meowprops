@@ -11,7 +11,6 @@ export async function getStaticProps(context) {
   const desc = compliments[Math.floor(Math.random() * 1) + 0].text;
   const randomMeowPic = Math.floor(Math.random() * 0) + 0;
 
-  console.log({ desc, randomMeowPic });
   return {
     props: {
       tweet: `${toTwitterId}, ${fromTwitterId} would like to say, ${desc}`,
@@ -26,7 +25,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths(context) {
   return {
-    paths: [{ params: { id: "0" } }],
+    paths: [{ params: { id: `kulkarniankita9-ralstonalmeida` } }],
     fallback: true,
   };
 }
