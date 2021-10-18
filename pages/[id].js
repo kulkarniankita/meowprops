@@ -40,7 +40,10 @@ export default function Page(props) {
     <main className="container">
       <Head>
         <title>Meow Props</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://meowprops.vercel.app/meowpics/${props.randomMeowPic}.png"
+        />
 
         <script async src="https://platform.twitter.com/widgets.js" />
         <meta name="twitter:card" content="summary" />
@@ -52,7 +55,7 @@ export default function Page(props) {
         <meta name="twitter:creator" content={props.fromTwitterId} />
         <meta
           name="twitter:image"
-          content={`https://meowprops.vercel.app/icons/${props.randomMeowPic}.png`}
+          content={`https://meowprops.vercel.app/meowpics/${props.randomMeowPic}.png`}
         />
         <meta name="twitter:description" content={props.desc} />
 
