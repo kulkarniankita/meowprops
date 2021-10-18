@@ -9,7 +9,7 @@ export async function getStaticProps(context) {
   const toTwitterId = id.split("-")[1];
 
   const randomNumber = Math.floor(Math.random() * 1) + 0;
-  const desc = compliments[randomNumber.toFixed(3)].text;
+  const desc = compliments[randomNumber].text;
   const randomMeowPic = Math.floor(Math.random() * 0) + 0;
 
   return {

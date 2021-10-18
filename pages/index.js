@@ -10,7 +10,9 @@ export default function Home() {
 
   const router = useRouter();
 
-  const uniqueUrl = `${fromTwitterId}-${toTwitterId}-${Math.random()}`;
+  const uniqueUrl = `${fromTwitterId}-${toTwitterId}-${Math.random().toFixed(
+    3
+  )}`;
   let url = `http://meowprops.vercel.app/props-${uniqueUrl}`;
 
   const handleOnChange = (e) => {
