@@ -34,27 +34,28 @@ export default function Home() {
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content={"Be kind and give a props to someone"}
+          content={"Be kind and give props to someone"}
         />
 
         <meta name="twitter:creator" content="@kulkarniankita9" />
         <meta
           name="twitter:image"
-          content="https://meowprops.vercelapp/icons/0.png"
+          content="https://meowprops.vercelapp/meowpics/0.png"
         />
         <meta
           name="twitter:description"
           content="Be kind and give a props to someone and this site will automatically share a tweet with you"
         />
 
+        <meta property="og:site_name" content="Meow Props" />
+
         <meta property="og:title" content={"Meow Props"} />
         <meta property="og:url" content="https://meowprops.vercel.app" />
-        <meta property="og:image" content="/icons/0.png" />
+        <meta property="og:image" content={"/meowpics/0.png"} />
         <meta
           property="og:description"
-          content="Be kind and give a props to someone"
+          content="Be kind and give props to someone"
         />
-        <meta property="og:site_name" content="Meow Props" />
       </Head>
 
       <main className={styles.main}>

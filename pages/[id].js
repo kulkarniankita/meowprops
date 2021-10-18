@@ -48,18 +48,24 @@ export default function Page(props) {
           content={"Be kind and give a props to someone"}
         />
 
-        <meta name="twitter:creator" content="@kulkarniankita9" />
+        <meta name="twitter:creator" content={props.fromTwitterId} />
         <meta
           name="twitter:image"
-          content="https://meowprops.vercelapp/icons/0.png"
+          content={`https://meowprops.vercelapp/icons/${props.randomMeowPic}.png`}
         />
-        <meta name="twitter:description" content={props.description} />
+        <meta name="twitter:description" content={props.desc} />
 
-        <meta property="og:title" content={props.title} />
+        <meta
+          property="og:title"
+          content={`Meow Props to ${props.toTwitterId}`}
+        />
         <meta property="og:url" content="https://meowprops.vercel.app" />
         <meta property="og:image" content="/icons/0.png" />
-        <meta property="og:description" content={props.description} />
-        <meta property="og:site_name" content={`Meow Props ${props.title}`} />
+        <meta property="og:description" content={props.desc} />
+        <meta
+          property="og:site_name"
+          content={`Meow Props to ${props.toTwitterId}`}
+        />
       </Head>
       <div className="glass">
         <div className="meowWrapper">
