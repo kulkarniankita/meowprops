@@ -40,7 +40,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@kulkarniankita9" />
         <meta
           name="twitter:image"
-          content="https://meowprops.vercelapp/meowpics/0.png"
+          content="https://meowprops.vercel.app/meowpics/0.png"
         />
         <meta
           name="twitter:description"
