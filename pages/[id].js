@@ -81,6 +81,7 @@ export default function Page(props) {
           <p className="bigText">{props.tweet}</p>
           <a
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            target="_blank"
             className="twitter-share-button"
             data-show-count="false"
             data-via={props.fromTwitterId}
