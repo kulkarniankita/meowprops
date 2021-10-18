@@ -51,7 +51,7 @@ export default function Page(props) {
         <meta name="twitter:creator" content={props.fromTwitterId} />
         <meta
           name="twitter:image"
-          content={`https://meowprops.vercelapp/icons/${props.randomMeowPic}.png`}
+          content={`https://meowprops.vercel.app/icons/${props.randomMeowPic}.png`}
         />
         <meta name="twitter:description" content={props.desc} />
 
