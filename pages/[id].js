@@ -8,12 +8,13 @@ export async function getStaticProps(context) {
   const fromTwitterId = id.split("-")[0];
   const toTwitterId = id.split("-")[1];
 
-  const desc = compliments[Math.floor(Math.random() * 1) + 0].text;
+  const randomNumber = Math.floor(Math.random() * 1) + 0;
+  const desc = compliments[randomNumber.toFixed(3)].text;
   const randomMeowPic = Math.floor(Math.random() * 0) + 0;
 
   return {
     props: {
-      tweet: `${toTwitterId}, ${fromTwitterId} would like to say, ${desc}`,
+      tweet: `@${toTwitterId}, @${fromTwitterId} would like to say, ${desc}`,
       randomMeowPic,
       desc,
       fromTwitterId,
