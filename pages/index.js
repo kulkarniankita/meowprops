@@ -79,7 +79,7 @@ export default function Home() {
             <input
               type="text"
               name="toTwitterId"
-              placeholder="Their Twitter Id"
+              placeholder="Who is this amazing person?"
               value={toTwitterId}
               onChange={handleOnChange}
             />
@@ -91,7 +91,7 @@ export default function Home() {
             <input
               type="text"
               name="fromTwitterId"
-              placeholder="Give a props to someone"
+              placeholder=""
               value={fromTwitterId}
               onChange={handleOnChange}
             />
