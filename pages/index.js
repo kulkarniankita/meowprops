@@ -72,8 +72,7 @@ export default function Home() {
         <div className={styles.description}>
           <div className={styles.formWrapper}>
             <label>
-              What is the Twitter ID of the person who you would like to give a
-              prop to?
+              What is their Twitter Id?
             </label>
             <br />
             <input
@@ -86,7 +85,7 @@ export default function Home() {
           </div>
 
           <div className={styles.formWrapper}>
-            <label>What is your Twitter ID?</label>
+            <label>What is your Twitter Id?</label>
             <br />
             <input
               type="text"
